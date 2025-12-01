@@ -1,14 +1,11 @@
 {
-	"recommendations": [
-		"steoates.autoimport",
-		"biomejs.biome",
-		"vincaslt.highlight-matching-tag",
-		"htmlhint.vscode-htmlhint",
-		"christian-kohler.path-intellisense",
-		"yoavbls.pretty-ts-errors",
-		"adpyke.vscode-sql-formatter",
-		"bradlc.vscode-tailwindcss",
-		"redhat.vscode-yaml",
-		"typescriptteam.native-preview"
-	]
+  "recommendations": [
+    "steoates.autoimport",
+    "vincaslt.highlight-matching-tag",
+    "htmlhint.vscode-htmlhint",
+    "christian-kohler.path-intellisense",
+    "yoavbls.pretty-ts-errors",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint"
+  ]
 }
