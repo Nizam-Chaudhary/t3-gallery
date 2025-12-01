@@ -6,6 +6,6 @@
 		"source.fixAll.biome": "explicit",
 		"source.organizeImports.biome": "explicit"
 	},
-	"typescript.experimental.useTsgo": true,
+	// "typescript.experimental.useTsgo": true,
 	"dotenv.enableAutocloaking": false
 }
