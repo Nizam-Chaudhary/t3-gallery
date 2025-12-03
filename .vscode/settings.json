@@ -6,5 +6,6 @@
 		"source.fixAll.biome": "explicit",
 		"source.organizeImports.biome": "explicit",
 		"source.action.useSortedKeys.biome": "explicit"
-	}
+	},
+	"typescript.tsdk": "node_modules/typescript/lib"
 }
