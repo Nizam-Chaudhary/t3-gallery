@@ -16,6 +16,7 @@ export const images = createTable(
 	(d) => ({
 		id: d.integer().primaryKey().generatedByDefaultAsIdentity(),
 		name: d.varchar({ length: 256 }).notNull(),
+		userId: d.varchar({ length: 256 }).notNull(),
 		url: d.varchar({ length: 1024 }).notNull(),
 		createdAt: d
 			.timestamp({ withTimezone: true })
