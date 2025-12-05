@@ -37,9 +37,9 @@ export default function RootLayout({
 						routerConfig={extractRouterConfig(ourFileRouter)}
 					/>
 					<TopNav />
+					<div id="modal-root" />
 					{children}
 					{modal}
-					<div id="modal-root" />
 				</body>
 			</html>
 		</ClerkProvider>

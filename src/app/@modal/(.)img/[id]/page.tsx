@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { getImage } from "~/server/queries";
+import FullPageImageView from "~/components/full-image-page";
+import { Modal } from "./modal";
 
 type Props = {
 	params: Promise<{ id: string }>;
@@ -8,11 +8,11 @@ type Props = {
 export default async function PhotoModal({ params }: Props) {
 	const { id } = await params;
 	const idAsNumber = Number(id);
-	if (Number.isNaN(isNaN)) throw new Error("Invalid image id");
-	const image = await getImage(idAsNumber);
+	if (Number.isNaN(idAsNumber)) throw new Error("Invalid image id");
+
 	return (
-		<div>
-			<Image alt="Image" height={122} src={image.url} width={122} />
-		</div>
+		<Modal>
+			<FullPageImageView imageId={idAsNumber} />
+		</Modal>
 	);
 }
