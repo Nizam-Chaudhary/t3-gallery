@@ -25,7 +25,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode; modal: React.ReactNode }>) {
 	return (
 		<ClerkProvider>
-			<html className={`${geist.variable}`} lang="en">
+			<html className={`${geist.variable} dark`} lang="en">
 				<body>
 					<div className="grid h-screen grid-rows-[auto,1fr]">
 						<NextSSRPlugin
