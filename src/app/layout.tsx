@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { extractRouterConfig } from "uploadthing/server";
 import { ourFileRouter } from "~/app/api/uploadthing/core";
+import { Toaster } from "~/components/ui/sonner";
 import TopNav from "./_components/topnav";
 
 export const metadata: Metadata = {
@@ -39,7 +40,10 @@ export default function RootLayout({
 						/>
 						<TopNav />
 
-						<main className="overflow-y-scroll">{children}</main>
+						<main className="overflow-y-scroll">
+							{children}
+							<Toaster />
+						</main>
 					</div>
 					<div id="modal-root" />
 					{modal}
